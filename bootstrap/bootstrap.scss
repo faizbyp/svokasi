@@ -14,7 +14,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 .hero {
   background: url('../assets/img/hero-sv.png') no-repeat center top;
-  height: 80vh;
+  height: 500px;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";

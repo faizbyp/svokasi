@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .hero {
   background: url("../assets/img/hero-sv.png") no-repeat center top;
-  height: 80vh;
+  height: 500px;
 }
 
 /*!
