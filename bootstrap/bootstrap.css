@@ -44,6 +44,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-accent: #EC008C;
+  --bs-grey: #E9EEE8;
   --bs-primary-rgb: 7, 21, 91;
   --bs-secondary-rgb: 8, 106, 216;
   --bs-success-rgb: 25, 135, 84;
@@ -53,6 +54,7 @@
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-accent-rgb: 236, 0, 140;
+  --bs-grey-rgb: 233, 238, 232;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -2962,6 +2964,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #EC008C;
 }
 
+.btn-grey {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #E9EEE8;
+  --bs-btn-border-color: #E9EEE8;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #ecf1eb;
+  --bs-btn-hover-border-color: #ebf0ea;
+  --bs-btn-focus-shadow-rgb: 198, 202, 197;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #edf1ed;
+  --bs-btn-active-border-color: #ebf0ea;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #E9EEE8;
+  --bs-btn-disabled-border-color: #E9EEE8;
+}
+
 .btn-outline-primary {
   --bs-btn-color: #07155B;
   --bs-btn-border-color: #07155B;
@@ -3112,6 +3131,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #EC008C;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #EC008C;
+  --bs-gradient: none;
+}
+
+.btn-outline-grey {
+  --bs-btn-color: #E9EEE8;
+  --bs-btn-border-color: #E9EEE8;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #E9EEE8;
+  --bs-btn-hover-border-color: #E9EEE8;
+  --bs-btn-focus-shadow-rgb: 233, 238, 232;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #E9EEE8;
+  --bs-btn-active-border-color: #E9EEE8;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #E9EEE8;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #E9EEE8;
   --bs-gradient: none;
 }
 
@@ -4736,6 +4772,15 @@ textarea.form-control-lg {
   color: #720043;
 }
 
+.alert-grey {
+  --bs-alert-color: #5d5f5d;
+  --bs-alert-bg: #fbfcfa;
+  --bs-alert-border-color: #f8faf8;
+}
+.alert-grey .alert-link {
+  color: #4a4c4a;
+}
+
 @keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -5152,6 +5197,20 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #8e0054;
   border-color: #8e0054;
+}
+
+.list-group-item-grey {
+  color: #5d5f5d;
+  background-color: #fbfcfa;
+}
+.list-group-item-grey.list-group-item-action:hover, .list-group-item-grey.list-group-item-action:focus {
+  color: #5d5f5d;
+  background-color: #e2e3e1;
+}
+.list-group-item-grey.list-group-item-action.active {
+  color: #fff;
+  background-color: #5d5f5d;
+  border-color: #5d5f5d;
 }
 
 .btn-close {
@@ -6715,6 +6774,11 @@ textarea.form-control-lg {
   background-color: RGBA(236, 0, 140, var(--bs-bg-opacity, 1)) !important;
 }
 
+.text-bg-grey {
+  color: #000 !important;
+  background-color: RGBA(233, 238, 232, var(--bs-bg-opacity, 1)) !important;
+}
+
 .link-primary {
   color: #07155B !important;
 }
@@ -6776,6 +6840,13 @@ textarea.form-control-lg {
 }
 .link-accent:hover, .link-accent:focus {
   color: #f033a3 !important;
+}
+
+.link-grey {
+  color: #E9EEE8 !important;
+}
+.link-grey:hover, .link-grey:focus {
+  color: #edf1ed !important;
 }
 
 .ratio {
@@ -7242,6 +7313,11 @@ textarea.form-control-lg {
 .border-accent {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-accent-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-grey {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-grey-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-white {
@@ -8111,6 +8187,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-accent-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-grey {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-grey-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-black {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
@@ -8205,6 +8286,11 @@ textarea.form-control-lg {
 .bg-accent {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-accent-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-grey {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-grey-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {

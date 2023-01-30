@@ -23,4 +23,15 @@
   </div>
 </section>
 
+<section class="container-lg py-5">
+  <div class="row">
+    <h2 class="col-12 text-center fw-bold">Informasi Terbaru</h2>
+    <div class="col-12 text-center">
+      <a href="#" class="btn btn-secondary"><img src="wp-content/themes/svokasi/assets/img/icon berita.svg" alt=""> Berita</a>
+      <a href="#" class="btn btn-grey">Berita</a>
+      <a href="#" class="btn btn-secondary">Berita</a>
+    </div>
+  </div>
+</section>
+
 <?php get_footer();?>

@@ -8,7 +8,8 @@ $font-family-base: 'Poppins', sans-serif;
 @import "../node_modules/bootstrap/scss/_variables";
 
 $custom-colors: (
-  "accent": #EC008C
+  "accent": #EC008C,
+  "grey": #E9EEE8
 );
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
