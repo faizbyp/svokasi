@@ -32,6 +32,36 @@
       <a href="#" class="btn btn-grey text-secondary fw-semibold"><img src="wp-content/themes/svokasi/assets/img/icon calendar.svg" alt=""> Agenda</a>
     </div>
   </div>
+
+  <div class="row my-3">
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <button class="btn btn-outline-primary rounded-pill">Berita</button>
+          <button class="btn btn-outline-primary rounded-pill">Juara</button>
+          <span>5 November 2022</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <?php get_footer();?>
