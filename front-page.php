@@ -23,13 +23,13 @@
   </div>
 </section>
 
-<section class="container-lg py-5">
+<section class="container-lg py-5 informasi">
   <div class="row">
     <h2 class="col-12 text-center fw-bold">Informasi Terbaru</h2>
     <div class="col-12 text-center">
-      <a href="#" class="btn btn-secondary"><img src="wp-content/themes/svokasi/assets/img/icon berita.svg" alt=""> Berita</a>
-      <a href="#" class="btn btn-grey">Berita</a>
-      <a href="#" class="btn btn-secondary">Berita</a>
+      <a href="#" class="btn btn-secondary fw-semibold"><img src="wp-content/themes/svokasi/assets/img/icon berita.svg" alt=""> Berita</a>
+      <a href="#" class="btn btn-grey text-secondary fw-semibold"><img src="wp-content/themes/svokasi/assets/img/icon horn.svg" alt=""> Pengumuman</a>
+      <a href="#" class="btn btn-grey text-secondary fw-semibold"><img src="wp-content/themes/svokasi/assets/img/icon calendar.svg" alt=""> Agenda</a>
     </div>
   </div>
 </section>

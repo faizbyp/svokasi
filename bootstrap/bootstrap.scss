@@ -18,4 +18,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   height: 500px;
 }
 
+.informasi {
+  background: url("../assets/img/informasi.svg") no-repeat left top;
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";
