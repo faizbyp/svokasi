@@ -22,4 +22,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   background: url("../assets/img/informasi.svg") no-repeat left top;
 }
 
+.explore {
+  background: url("../assets/img/explore sv ipb.svg") no-repeat right top;
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";
