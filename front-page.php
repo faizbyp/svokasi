@@ -156,4 +156,18 @@
   </div>
 </section>
 
+<section class="container-fluid py-5 prodi">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-3">
+        <img src="wp-content/themes/svokasi/assets/img/frame 55.png" class="img-fluid" alt="">
+      </div>
+      <div class="col-12 col-lg-9">
+        <h3 class="fw-bold">Program Studi Sekolah<br>Vokasi IPB University</h3>
+        <p class="text-muted">Sekolah Vokasi IPB menyelenggarakan program pendidikan<br>yang terdiri dari 17 Program Studi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <?php get_footer();?>

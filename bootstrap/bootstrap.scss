@@ -26,4 +26,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   background: url("../assets/img/explore sv ipb.svg") no-repeat right top;
 }
 
+.prodi {
+  background: rgba(236, 0, 140, 0.15);
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";
