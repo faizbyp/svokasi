@@ -165,6 +165,10 @@
       <div class="col-12 col-lg-9">
         <h3 class="fw-bold">Program Studi Sekolah<br>Vokasi IPB University</h3>
         <p class="text-muted">Sekolah Vokasi IPB menyelenggarakan program pendidikan<br>yang terdiri dari 17 Program Studi.</p>
+        <div class="col-9 col-lg-4">
+          <h1 class="display-1">17</h1>
+          <p>anjay</p>
+        </div>
       </div>
     </div>
   </div>
