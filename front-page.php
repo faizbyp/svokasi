@@ -165,13 +165,58 @@
       <div class="col-12 col-lg-9">
         <h3 class="fw-bold">Program Studi Sekolah<br>Vokasi IPB University</h3>
         <p class="text-muted">Sekolah Vokasi IPB menyelenggarakan program pendidikan<br>yang terdiri dari 17 Program Studi.</p>
-        <div class="col-9 col-lg-4">
-          <h1 class="display-1">17</h1>
-          <p>anjay</p>
-        </div>
+        <span class="fw-bold"><span class="display-1 text-accent">17 </span>Program Studi</span>
+        <span class="fw-bold ms-5"><span class="display-1 text-accent">7.128 </span>Mahasiswa Aktif</span>
       </div>
     </div>
   </div>
+</section>
+
+<section class="container-fluid py-5 agenda">
+  <section class="container-lg">
+    <div class="row">
+      <h2 class="col-12 text-center fw-bold">Agenda Sekolah Vokasi IPB</h2>
+    </div>
+
+    <div class="row my-3">
+      <a href="#" class="col-12 col-lg-4 mb-4 text-decoration-none">
+        <div class="card">
+          <img src="wp-content/themes/svokasi/assets/img/image 20.png" class="card-img-top" alt="...">
+          <div class="card-body text-black">
+            <h6 class="card-text">17 Agustus</h6>
+            <h6 class="card-title fw-bold">Judul Kartu</h6>
+            <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="col-12 col-lg-4 mb-4 text-decoration-none">
+        <div class="card">
+          <img src="wp-content/themes/svokasi/assets/img/image 18.png" class="card-img-top" alt="...">
+          <div class="card-body text-black">
+            <h6 class="card-text">17 Agustus</h6>
+            <h6 class="card-title fw-bold">Judul Kartu</h6>
+            <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="col-12 col-lg-4 mb-4 text-decoration-none">
+        <div class="card">
+          <img src="wp-content/themes/svokasi/assets/img/image 19.png" class="card-img-top" alt="...">
+          <div class="card-body text-black">
+            <h6 class="card-text">17 Agustus</h6>
+            <h6 class="card-title fw-bold">Judul Kartu</h6>
+            <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="row my-1">
+      <div class="col text-center">
+        <button class="btn btn-accent rounded-pill text-white fw-bold">Selengkapnya</button>
+      </div>
+    </div>
+  </section>
 </section>
 
 <?php get_footer();?>
