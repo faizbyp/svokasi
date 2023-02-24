@@ -12,4 +12,32 @@ function load_bootstrap() {
 }
 add_action('wp_enqueue_scripts', 'load_bootstrap');
 
+add_theme_support('menus');
+
+register_nav_menus(
+  array(
+    'top-menu' => __('Top Menu', 'theme')
+  )
+);
+
+class Walker_Top_Menu extends Walker_Nav_menu
+{
+  public function start_el(&$output, $item, $depth = 0, $args = null, $id = 0)
+  {
+      $output .= '<li class="nav-item">' . $this->generate_menu_link($item) . '</li>';
+  }
+
+  private function generate_menu_link($item)
+  {
+      $url = $item->url;
+      $title = $item->title;
+
+      return sprintf(
+          '<a class="nav-link text-white" href="%s">%s</a>',
+          esc_url($url),
+          esc_html($title)
+      );
+  }
+}
+
 ?>
