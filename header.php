@@ -26,28 +26,16 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav justify-content-evenly">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Profil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Akademik</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Pendaftaran</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Kampus Sukabumi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">SDGs</a>
-            </li>
-          </ul>
-        </div>
+        <?php
+          wp_nav_menu(array(
+              'theme_location' => 'top-menu',
+              'container' => 'div',
+              'container_class' => 'collapse navbar-collapse',
+              'container_id' => 'navbarNav',
+              'menu_class' => 'navbar-nav justify-content-evenly',
+              'walker' => new Walker_Top_Menu()
+          ));
+        ?>
       </div>
 
       <div class="col-3 justify-content-end">
