@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header(); ?>
 
 <section class="container-fluid d-flex hero">
   <div class="row align-items-center w-100 flex-grow-1">
@@ -27,81 +27,39 @@
   <section class="container-lg">
     <div class="row">
       <h2 class="col-12 text-center fw-bold">Informasi Terbaru</h2>
-      <div class="col-12 text-center">
-        <a href="#" class="btn btn-secondary fw-semibold"><img src="wp-content/themes/svokasi/assets/img/icon berita.svg" alt=""> Berita</a>
-        <a href="#" class="btn btn-grey text-secondary fw-semibold"><img src="wp-content/themes/svokasi/assets/img/icon horn.svg" alt=""> Pengumuman</a>
-        <a href="#" class="btn btn-grey text-secondary fw-semibold"><img src="wp-content/themes/svokasi/assets/img/icon calendar.svg" alt=""> Agenda</a>
+      <div class="col-12 item-align-center d-flex justify-content-center gap-2" role="tablist">
+        <ul class="nav nav-pills mb-3 d-flex justify-content-center gap-2" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="btn btn-secondary fw-semibold active" id="nav-berita-tab" data-bs-toggle="tab" data-bs-target="#nav-berita" type="button" role="tab" aria-controls="nav-berita" aria-selected="true">
+              <img src="wp-content/themes/svokasi/assets/img/icon berita.svg" alt="">
+              Berita</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="btn btn-grey text-secondary fw-semibold" id="nav-pengumuman-tab" data-bs-toggle="tab" data-bs-target="#nav-pengumuman" type="button" role="tab" aria-controls="nav-pengumuman" aria-selected="false">
+              <img src="wp-content/themes/svokasi/assets/img/icon horn.svg" alt="">
+              Pengumuman</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="btn btn-grey text-secondary fw-semibold" href="/#agenda"> <img src="wp-content/themes/svokasi/assets/img/icon calendar.svg" alt=""> Agenda</a>
+          </li>
+
+
+
+
+        </ul>
       </div>
     </div>
-  
-    <div class="row my-3">
-      <div class="col-12 col-lg-4 mb-4">
-        <div class="card">
-          <img src="wp-content/themes/svokasi/assets/img/image 9.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text fw-bold">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button class="btn btn-outline-primary rounded-pill">Berita</button>
-            <button class="btn btn-outline-primary rounded-pill">Juara</button>
-            <span>5 November 2022</span>
-          </div>
-        </div>
+
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-berita" role="tabpanel" aria-labelledby="nav-berita-tab">
+        <?php require_once 'partial/berita.php'; ?>
       </div>
-      <div class="col-12 col-lg-4 mb-4">
-        <div class="card">
-          <img src="wp-content/themes/svokasi/assets/img/image 7.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text fw-bold">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button class="btn btn-outline-primary rounded-pill">Berita</button>
-            <button class="btn btn-outline-primary rounded-pill">Juara</button>
-            <span>5 November 2022</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-4 mb-4">
-        <div class="card">
-          <img src="wp-content/themes/svokasi/assets/img/image 8.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text fw-bold">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button class="btn btn-outline-primary rounded-pill">Berita</button>
-            <button class="btn btn-outline-primary rounded-pill">Juara</button>
-            <span>5 November 2022</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-4 mb-4">
-        <div class="card">
-          <img src="wp-content/themes/svokasi/assets/img/image 10.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text fw-bold">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button class="btn btn-outline-primary rounded-pill">Berita</button>
-            <button class="btn btn-outline-primary rounded-pill">Juara</button>
-            <span>5 November 2022</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-4 mb-4">
-        <div class="card">
-          <img src="wp-content/themes/svokasi/assets/img/image 11.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text fw-bold">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button class="btn btn-outline-primary rounded-pill">Berita</button>
-            <button class="btn btn-outline-primary rounded-pill">Juara</button>
-            <span>5 November 2022</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-4 mb-4">
-        <div class="card">
-          <img src="wp-content/themes/svokasi/assets/img/image 12.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text fw-bold">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button class="btn btn-outline-primary rounded-pill">Berita</button>
-            <button class="btn btn-outline-primary rounded-pill">Juara</button>
-            <span>5 November 2022</span>
-          </div>
-        </div>
+      <div class="tab-pane fade" id="nav-pengumuman" role="tabpanel" aria-labelledby="nav-pengumuman-tab">
+        <?php require_once 'partial/pengumuman.php'; ?>
       </div>
     </div>
+
+
   </section>
 </section>
 
@@ -173,43 +131,12 @@
 </section>
 
 <section class="container-fluid py-5 agenda">
-  <section class="container-lg">
+  <section class="container-lg" id="agenda">
     <div class="row">
       <h2 class="col-12 text-center fw-bold">Agenda Sekolah Vokasi IPB</h2>
     </div>
-
-    <div class="row my-3">
-      <a href="#" class="col-12 col-lg-4 mb-4 text-decoration-none">
-        <div class="card">
-          <img src="wp-content/themes/svokasi/assets/img/image 20.png" class="card-img-top" alt="...">
-          <div class="card-body text-black">
-            <h6 class="card-text">17 Agustus</h6>
-            <h6 class="card-title fw-bold">Judul Kartu</h6>
-            <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </a>
-      <a href="#" class="col-12 col-lg-4 mb-4 text-decoration-none">
-        <div class="card">
-          <img src="wp-content/themes/svokasi/assets/img/image 18.png" class="card-img-top" alt="...">
-          <div class="card-body text-black">
-            <h6 class="card-text">17 Agustus</h6>
-            <h6 class="card-title fw-bold">Judul Kartu</h6>
-            <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </a>
-      <a href="#" class="col-12 col-lg-4 mb-4 text-decoration-none">
-        <div class="card">
-          <img src="wp-content/themes/svokasi/assets/img/image 19.png" class="card-img-top" alt="...">
-          <div class="card-body text-black">
-            <h6 class="card-text">17 Agustus</h6>
-            <h6 class="card-title fw-bold">Judul Kartu</h6>
-            <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </a>
-    </div>
+      
+    <?php require 'partial/agenda.php'; ?>
 
     <div class="row my-1">
       <div class="col text-center">
@@ -219,4 +146,4 @@
   </section>
 </section>
 
-<?php get_footer();?>
+<?php get_footer(); ?>
