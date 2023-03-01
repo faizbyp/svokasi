@@ -33,14 +33,6 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav justify-content-evenly">
-              <?php
-              wp_nav_menu(array(
-                'theme_location' => 'top-menu',
-                'container' => false,
-                'items_wrap' => '%3$s',
-                'walker' => new Walker_Top_Menu()
-              ));
-              ?>
               <!-- <li class="nav-item">
                 <a class="nav-link text-white" href="#">Beranda</a>
               </li>
